@@ -1,0 +1,19 @@
+//Ex. 1
+
+<- Definição de Automóvel->
+
+Veículo terrestre de qualquer tipo,que se destina ao transporte de passageiros ou carga,
+movido por um motor (via combustão de resíduos fósseis, baterias ou reação de químicos), dirigido por um condutor, 
+acionado por meio da ignição, movido pelo acelerador, parado pelo freio além de controlar a velocidade com a embreagem.
+
+Condutor: Conduz o carro, é ele que aciona as outras partes do carro;
+
+Ignição: O Condutor insere a chave na Ignição, acionando-a, fazendo que as outras partes fiquem funcionais, 
+assim o Condutor pode locomover o Automóvel;
+
+Acelerador: É necessário para que o carro ande para frente, o Condutor pisa nele, assim o movendo o carro para frente;
+
+Freio: É necessário para que o carro pare, o Condutor pisa nele, assim fazendo que o carro pare, podendo frear bruscamente ou aos poucos;
+
+Embreagem: O condutor controla a velocidade pretendida pela embreagem, troca as marchas pela alavanca ou “borboletas”que ficam no volante.
+
