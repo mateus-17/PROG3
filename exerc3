@@ -1,0 +1,44 @@
+//Ex.3
+<?php
+class Product{
+  public $name;
+  public $price;
+  public $amount;
+  public $toPay;
+ public $discount;
+	
+  public function Product($n,$p,$a){
+    $this->name = $n;
+    $this->amount= $a;
+    $this-> price = $p;
+	  
+    $this->toPay = $this->price * $this->amount;
+      if($this->amount >=11 and $this->amount <=20){
+        $this->discount= "10%";
+        $disc = ($this->toPay*10)/100;
+        $this->toPay = $this->toPay - $disc;
+        
+      }
+      elseif($this->amount >=21 and $this->amount<=50){
+        $this->discount= "20%";
+        $disc = ($this->toPay*20)/100;
+        $this->toPay = $this->toPay - $disc;
+      }
+      elseif($this->amount >50){
+        $this->discount= "25%";
+        $disc = ($this->toPay*25)/100;
+        $this->toPay = $this->toPay - $disc;
+      }
+      else{
+        $this->discount = 0;
+      }
+  }
+}
+$p1 = new Product("mask",3.50,20);
+  print_r($p1);
+
+$p2 = new Product("antiseptic gel",12.00,21);
+  print_r($p2);
+
+$p3 = new Product("gloves",6.00,51);
+  print_r($p3);
