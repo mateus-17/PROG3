@@ -1,0 +1,41 @@
+<?php
+class car{
+  public $model;
+  public $maxvelocity;
+  public $currentspeed;
+
+public function Car($m,$mv){
+  $this->model = $m;
+  $this->maxvelocity = $mv;
+  echo "{$this->setModel()} \n";
+  $this->turnonCar();
+  $this->speedUp();
+  $this->decrease();
+  $this->stopCar();
+  $this->turnoffCar();
+}
+  public function turnonCar(){
+      echo"Car turned on \n";
+  }
+  public function turnoffCar(){
+    echo "Car turned off\n ";
+  }
+  public function speedUp(){
+    $this->currentspeed = $this->maxvelocity;
+    echo "Speeding up \nVelocity = {$this->currentspeed} km/h \n";
+  }
+  public function setModel(){
+    return $this->model;
+  }
+  public function decrease(){
+    $this->currentspeed = $this->currentspeed/2;
+    echo"Decreasing speed \nVelocity = {$this->currentspeed} km/h \n";
+  }
+  public function stopCar(){
+    $this->currentspeed = 0;
+    echo "Stopped car \nVelocity = {$this->currentspeed} km/h\n";
+  }
+
+}
+
+$atm1 = new car("BMW X",80);
